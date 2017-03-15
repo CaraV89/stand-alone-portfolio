@@ -10,9 +10,30 @@ body{
     background: yellow;
 }
 
+header {
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    background: #2a363b;
+    color: whitesmoke;
+}
+
+footer {
+    background: #2a363b;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
 figure {
-    background: teal;
-    width: 50%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+
+img {
+    width: 100px;
+    height: 100px;
 }
 
 
