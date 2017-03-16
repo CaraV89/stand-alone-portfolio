@@ -1,0 +1,129 @@
+@import 'normalize';
+@import 'lightgallery.min';
+@import 'lg-trasnsitions.min';
+
+
+
+
+/********************
+YOUR STYLES
+*******************/
+
+body{
+    background: black;
+}
+
+header {
+    width: 100%;
+    font-size: 5vw;
+    background: url("http://www.designlovefest.com/wp-content/uploads/downloads/2013/04/blueombre.jpg");
+    background-size: cover;
+    background-position: center;
+    border-top: solid #ffdddd 6px;
+    border-bottom: solid #ffdddd 6px;
+    font-family: 'Syncopate', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: floralwhite;
+    display: flex;
+    align-content: center;
+}
+
+figure img {
+    border-radius: 10px;
+    width: 200px;
+    padding: 5px;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+figure { 
+    background: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Abstract-Patterns-High-Quality-Gray-Background.png);
+    padding: 5px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.photo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figcaption {
+    font-size: 16pt;
+    color: #ffdddd;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.lg-backdrop {
+    background: rgba(255,255,255,1);
+}
+
+.lg-image {
+    box-shadow: 0 0 70px #333;
+}
+
+.caption {
+    display: none;
+}
+
+footer {
+    background: url("http://www.designlovefest.com/wp-content/uploads/downloads/2013/04/blueombre.jpg");
+    display: flex;
+    justify-content: center;
+    color: floralwhite;
+}
+
+/********************
+MEDIA QUERIES
+*******************/
+/* Mobile: 320px = 20em */
+@media screen and (min-width: 20em) { 
+
+    .photo, .random, .arch, .rebrand {
+    display: flex;
+    flex-wrap: wrap;
+}
+    figure img {
+    border-radius: 10px;
+    width: 75px;
+    padding: 3px;
+}
+    
+  
+}
+
+/* Tablet:  768px = 160em */
+@media screen and (min-width: 48em)  {
+
+   figure img {
+    border-radius: 10px;
+    width: 150px;
+    padding: 5px;
+}
+
+}
+
+/* Desktop: 1280px = 80em */
+@media screen and (min-width: 80em) { 
+
+       figure img {
+    border-radius: 10px;
+    width: 200px;
+    padding: 5px;
+}
+    
+
+}
