@@ -7,7 +7,7 @@ YOUR STYLES
 *******************/
 
 body{
-    background: yellow;
+    background: #66ffcc;
 }
 
 header {
@@ -25,15 +25,14 @@ footer {
     color: whitesmoke;
 }
 
-figure {
-    display: inline-flex;
+figure { 
+    display: flex;
     flex-wrap: wrap;
-    flex-flow: column;
+    justify-content: space-around;
 }
 
-img {
-    width: 100px;
-    height: 100px;
+figure img {
+    margin: 10px;
 }
 
 
